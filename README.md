@@ -1,4 +1,5 @@
 🧭 NearWise
+
 Smart Nearby Places Recommender
 
 NearWise is a location-based recommendation web application that suggests nearby places based on user mood and real-time contextual factors such as distance, ratings, availability, and price range.
