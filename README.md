@@ -1,4 +1,4 @@
-🧭 **NearWise**
+##🧭 NearWise
 
 **Smart Nearby Places Recommender**
 
