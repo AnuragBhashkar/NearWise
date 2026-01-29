@@ -100,7 +100,7 @@ Coming soon
 Deployment link will be added after project completion.
 
 📂 Project Setup
-git clone https://github.com/your-username/smart-nearby-places.git
+git clone https://github.com/AnuragBhashkar/NearWise.git
 cd smart-nearby-places
 npm install
 npm start
@@ -127,9 +127,9 @@ Scalable and modular code structure
 
 Anurag Bhashkar
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/AnuragBhashkar
 
-LinkedIn: https://linkedin.com/in/your-profile
+LinkedIn: https://www.linkedin.com/in/anurag-bhashkar/
 
 ⭐ If you like this project
 
