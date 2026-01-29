@@ -1,4 +1,6 @@
-# NearWise
+# .
+
+📍 NearWise
 Smart nearby places recommender using Google Maps &amp; Places APIs
 A location-based recommendation web application that suggests nearby places based on user mood and real-time context such as distance, ratings, availability, and price range.
 
