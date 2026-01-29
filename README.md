@@ -1,12 +1,12 @@
-🧭 NearWise
+🧭 **NearWise**
 
-Smart Nearby Places Recommender
+**Smart Nearby Places Recommender**
 
-NearWise is a location-based recommendation web application that suggests nearby places based on user mood and real-time contextual factors such as distance, ratings, availability, and price range.
+NearWise is a **location-based recommendation web application** that suggests nearby places based on user mood and real-time contextual factors such as distance, ratings, availability, and price range.
 
-Users can select a mood (Work, Date, Quick Bite, Budget), and the app intelligently filters and ranks nearby places using Google Maps and Places APIs.
+Users can select a **mood (Work, Date, Quick Bite, Budget)**, and the app intelligently filters and ranks nearby places using Google Maps and Places APIs.
 
-🚀 Features
+🚀 **Features**
 
 📍 Detects user’s current location
 
@@ -18,11 +18,11 @@ Users can select a mood (Work, Date, Quick Bite, Budget), and the app intelligen
 
 🕒 Real-time open/closed status
 
-🧠 Smart weighted scoring logic for ranking places
+🧠 **Smart weighted scoring logic for ranking places**
 
 🗺️ Interactive map view with place markers
 
-🧠 How It Works
+🧠 **How It Works**
 
 User selects a mood (Work, Date, Quick Bite, Budget)
 
@@ -36,19 +36,15 @@ List view (details)
 
 Map view (markers)
 
-📊 Recommendation Logic (Sample)
+📊 **Recommendation Logic (Sample)**
 Final Score =
-  (Rating × 0.4)
-+ (Distance × 0.3)
-+ (Price Level × 0.2)
-+ (Open Now × 0.1)
-
+  (Rating × 0.4) + (Distance × 0.3) + (Price Level × 0.2) + (Open Now × 0.1)
 
 Weights are dynamically adjusted based on the selected mood.
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
-Frontend
+**Frontend**
 
 React.js (Hooks & Component-based architecture)
 
@@ -56,13 +52,13 @@ JavaScript (ES6+)
 
 HTML5, CSS3
 
-APIs
+**APIs**
 
 Google Maps JavaScript API
 
 Google Places API
 
-Tools
+**Tools**
 
 Git & GitHub (version control)
 
@@ -70,7 +66,7 @@ REST API handling
 
 Client-side filtering & sorting logic
 
-📂 Project Structure
+📂 **Project Structure**
 src/
 ├── components/     # Reusable UI components
 ├── services/       # API integration logic
@@ -80,29 +76,29 @@ src/
 ├── App.jsx
 └── index.js
 
-⚙️ Setup Instructions
+⚙️ **Setup Instructions**
 
-Clone the repository:
+**Clone the repository:**
 
 git clone https://github.com/AnuragBhashkar/NearWise.git
 cd NearWise
 
 
-Install dependencies:
+**Install dependencies:**
 
 npm install
 
 
-Create environment variables:
+**Create environment variables:**
 
 REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key_here
 
 
-Run the app:
+**Run the app:**
 
 npm start
 
-🌱 Future Enhancements
+🌱 **Future Enhancements**
 
 🔐 User authentication & saved favorites
 
@@ -120,7 +116,7 @@ npm start
 
 Deployment link will be added after project completion.
 
-👤 Author
+👤 **Author**
 
 Anurag Bhashkar
 
