@@ -38,9 +38,6 @@ and mock data as a fallback while maintaining an API-ready architecture.
 ### Filters & Mood Selection
 ![Filters](screenshots/filters.png)
 
-### Map View
-![Map](screenshots/map.png)
-
 ## 📦 Setup Instructions
 ```bash
 npm install
