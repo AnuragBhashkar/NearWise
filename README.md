@@ -1,129 +1,39 @@
-🧭 **NearWise**
+# NearWise
 
-**Smart Nearby Places Recommender**
+A smart location-based recommendation app that suggests nearby places
+based on user mood, distance, and preferences.
 
-NearWise is a **location-based recommendation web application** that suggests nearby places based on user mood and real-time contextual factors such as distance, ratings, availability, and price range.
+## 🚀 Features
+- Mood-based recommendations (Work, Date, Quick Bite, Budget)
+- Location-aware suggestions using browser geolocation
+- Weighted scoring & ranking logic
+- Explainable recommendations ("Why recommended?")
+- Interactive map using OpenStreetMap
+- Graceful fallback using mock data
 
-Users can select a **mood (Work, Date, Quick Bite, Budget)**, and the app intelligently filters and ranks nearby places using Google Maps and Places APIs.
+## 🛠 Tech Stack
+- React
+- OpenStreetMap (Leaflet)
+- Overpass API
+- JavaScript
+- CSS
 
-🚀 **Features**
+## 🧠 How it Works
+1. Fetches user location using browser Geolocation API
+2. Retrieves nearby places using OpenStreetMap (Overpass API)
+3. Applies intent-based visibility and user filters
+4. Calculates a weighted score for each place
+5. Ranks places and displays them on map and list view
 
-📍 Detects user’s current location
+## ⚠️ API Note
+Google Places API requires billing to be enabled.
+To avoid mandatory billing, this project uses OpenStreetMap for live data
+and mock data as a fallback while maintaining an API-ready architecture.
 
-🎯 Mood-based place recommendations
+## 📸 Screenshots
+(Add screenshots here)
 
-📏 Distance-based sorting (nearest first)
-
-⭐ Rating and price-level filtering
-
-🕒 Real-time open/closed status
-
-🧠 **Smart weighted scoring logic for ranking places**
-
-🗺️ Interactive map view with place markers
-
-🧠 **How It Works**
-
-User selects a mood (Work, Date, Quick Bite, Budget)
-
-App fetches nearby places using Google Places API
-
-Each place is evaluated using a weighted scoring algorithm
-
-Results are sorted and displayed in:
-
-List view (details)
-
-Map view (markers)
-
-📊 **Recommendation Logic (Sample)**
-Final Score =
-  (Rating × 0.4) + (Distance × 0.3) + (Price Level × 0.2) + (Open Now × 0.1)
-
-Weights are dynamically adjusted based on the selected mood.
-
-🛠️ **Tech Stack**
-
-**Frontend**
-
-React.js (Hooks & Component-based architecture)
-
-JavaScript (ES6+)
-
-HTML5, CSS3
-
-**APIs**
-
-Google Maps JavaScript API
-
-Google Places API
-
-**Tools**
-
-Git & GitHub (version control)
-
-REST API handling
-
-Client-side filtering & sorting logic
-
-📂 **Project Structure**
-src/
-├── components/     # Reusable UI components
-├── services/       # API integration logic
-├── utils/          # Scoring & helper functions
-├── hooks/          # Custom React hooks
-├── styles/         # Global styles
-├── App.jsx
-└── index.js
-
-⚙️ **Setup Instructions**
-
-**Clone the repository:**
-
-git clone https://github.com/AnuragBhashkar/NearWise.git
-cd NearWise
-
-
-**Install dependencies:**
-
+## 📦 Setup Instructions
+```bash
 npm install
-
-
-**Create environment variables:**
-
-REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key_here
-
-
-**Run the app:**
-
 npm start
-
-🌱 **Future Enhancements**
-
-🔐 User authentication & saved favorites
-
-🕒 Time-based recommendations
-
-🌙 Dark mode
-
-🧠 Personalized suggestions
-
-📱 Mobile-first responsive UI
-
-☁️ Backend integration
-
-🌐 Deployment
-
-Deployment link will be added after project completion.
-
-👤 **Author**
-
-Anurag Bhashkar
-
-GitHub: https://github.com/AnuragBhashkar
-
-LinkedIn: https://www.linkedin.com/in/anurag-bhashkar/
-
-⭐ Show Your Support
-
-If you like this project, consider giving it a ⭐ on GitHub!
