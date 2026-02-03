@@ -5,9 +5,10 @@ export function calculateScore(place, mood) {
   score += place.rating * 0.4;            // quality
   score += (5 - place.distance) * 0.3;    // proximity
 
-  // Mood-specific intelligence
+  // Mood-specific adjustments
   switch (mood) {
     case "work":
+      // Quiet & productivity-friendly places
       if (place.type === "work" || place.type === "cafe") {
         score += 1.5;
       }
@@ -17,6 +18,7 @@ export function calculateScore(place, mood) {
       break;
 
     case "date":
+      // Ambience & quality matter more
       score += place.rating * 0.3;
       if (place.type === "cafe" || place.type === "restaurant") {
         score += 1.0;
@@ -24,19 +26,16 @@ export function calculateScore(place, mood) {
       break;
 
     case "quick":
-  // Hard penalty for closed places
-  if (!place.openNow) {
-    score -= 5;
-  }
-
-  // Nearest place matters most
-  score += (5 - place.distance) * 1.0;
-
-  // Rating is least important here
-  score += place.rating * 0.1;
-  break;
+      // Speed & availability matter most
+      if (!place.openNow) {
+        score -= 5; // hard penalty
+      }
+      score += (5 - place.distance) * 1.0; // proximity dominates
+      score += place.rating * 0.1;         // rating less important
+      break;
 
     case "budget":
+      // Cheaper places preferred
       score += (4 - place.priceLevel) * 0.6;
       break;
 
@@ -44,5 +43,5 @@ export function calculateScore(place, mood) {
       break;
   }
 
-  return score;
+  return Number(score.toFixed(2));
 }
